@@ -13,8 +13,8 @@
     </head>
     <body>
         <div class="container" id="app">
-            <search-bar></search-bar>
-            <card></card>
+            <search-bar @on-search="showResult"></search-bar>
+            <card :list="result"></card>
         </div>
         
         <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
